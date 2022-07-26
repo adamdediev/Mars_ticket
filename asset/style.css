@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeueBold.eot');
+    src: local('Bebas Neue Bold'), local('BebasNeueBold'),
+        url('../asset/fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+        url('../asset/fonts/BebasNeueBold.woff2') format('woff2'),
+        url('../asset/fonts/BebasNeueBold.woff') format('woff'),
+        url('../asset/fonts/BebasNeueBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+body{
+    width: 100%;
+    height: 100vw;
+    min-width: 100vw;
+    padding: 0;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    
+    
+}
+
+.bak{
+    background: url('../asset/img/background.png') no-repeat;
+    width: 1920px;
+    height: 100vw;
+    position: absolute;
+    z-index: 10;
+}
+header{
+    top: 30px;
+    position: fixed;
+    color: #fff;
+    left: 9%;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    z-index: 10000000000000000000;    
+}
+
+.navigation{
+    display: flex;
+    margin-top: 15px;
+}
+.navigation>li{
+    list-style-type: none;
+    color: #F2E1C2;
+    text-transform: uppercase;
+    padding: 0 30px;
+    
+
+}
+
+.navigation>li:hover{
+    color: #F23207;
+
+}
+nav{
+    display: flex;
+}
+.btn{
+    width: 179px;
+    height: 40px;
+    background: #F2E1C2;
+    border-radius: 4px;
+    padding: 10px 15px;
+    color: #262526;
+    outline: none;
+    margin-left: 10px;
+    border: 0 solid;
+
+}
+.btn:hover{
+    background: #F23207;
+    color: #F2E1C2;
+}
+
+.video{
+    margin-left: 50px;
+    padding-top: 177px;
+    animation-name: video;
+    animation-duration: 10s;
+    
+}
+.mars{
+    font-family: "Bebas Neue";
+    color: #fff;
+    padding-left: 17%;
+    padding-top: 150px;
+    position: absolute;
+    mix-blend-mode: darken;
+    width: 100vw;
+    height: 100vw;
+    overflow: hidden;
+    font-size: 44.688em;
+    z-index: 1000;
+    margin-left: -8%;
+    letter-spacing: -0.015em;
+    animation-name: mars_center;
+    animation-duration: 10s;
+    
+    
+}
+
+.line_mars::after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #D9D9D9;
+    border-radius: 50%;
+    display: block;
+    margin-left: -4px;
+}
+.line_mars::before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #D9D9D9;
+    border-radius: 50%;
+    display: block;
+    margin-left: -4px;
+    position: absolute;
+    top: 100%;
+
+}
+
+
+.line_mars{
+    /* background: url("../asset/img/vertical_line.svg") no-repeat; */
+    border-left: 0.5px solid #D9D9D9;
+    width: 10px;
+    height: 605px;
+    animation-name: appearence;
+    z-index: 1000;
+    position: absolute;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    top: 194px;
+    left: 14%;
+}
+
+.text_line{
+    z-index: 1000;
+    top: 215px;
+    position: absolute;
+    left: 16%;
+    color: #F23207;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    font-weight: 500;
+    mix-blend-mode: unset;
+    font-size: 36px;
+    animation-name: text;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+.tuman{
+    position: absolute;
+    left: 1920px;
+    animation-name: tuman;
+    animation-duration: 15s;
+    top: 0;
+    animation-iteration-count: 1;
+}
+.bak_tuman_1{
+    background: url("../asset/img/tuman.png") repeat-x;
+    width: 1920px;
+    position:absolute;
+    height: 100vw;
+    z-index: 100000000000;
+    opacity: 0.5;
+   
+
+}
+
+.bak_tuman_2{
+    background: url("../asset/img/tuman.png") repeat-x;
+    width: 1920px;
+    left: 1920px;
+    position:absolute;
+    height: 100vw;
+    z-index: 100000000000;
+    opacity: 0.5;
+    
+
+}
+
+.open_window{
+    display: none;
+    background: #F2E1C2;
+    width: 100vw;
+    height: 100vw;
+    position: relative;
+    z-index: 1000000000000;
+}
+
+
+
+.text_close{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.text_bron{
+    max-width: 600px;
+    width: 100%;
+color: #262526;
+line-height: 114px;
+display: flex;
+align-items: center;
+letter-spacing: 0.025em;
+text-transform: uppercase;
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 7.125em;
+}
+.close{
+    width: 32px;
+    height: 32px;
+    background: #262526;
+}
+.open_btn{
+    background: #262526;
+    border-radius: 4px;
+    width: 387px;
+    height: 40px;
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-transform: uppercase;
+    color: #F2E1C2;
+    outline: none;
+    border: 0px solid;
+    
+    
+}
+.cont_input{
+    margin-top: 100px;
+}
+input{
+    background: #F2E1C2;
+    border: none;
+    border-bottom:2px solid;
+    width: 386.67px;
+    padding-bottom: 10px;
+    outline: none;
+    padding-top: 20px;;
+}
+
+.cont_input{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cont_open{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.otstup{
+    padding: 0 20px;
+}
+
+.btn_close{
+    text-align: end;
+}
+
+::placeholder{
+    color: #262526;
+    font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+left: 0px;
+}
+label{
+    color: #262526;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 16px;
+    
+}
+.btn_close{
+    margin-top: 60px;
+    margin-right: 0px;
+}

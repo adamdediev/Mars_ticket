@@ -1,0 +1,59 @@
+@keyframes appearence{
+    0%{
+      height: 0;
+    }
+    100%{
+         height: 605px;
+    }
+}
+
+@keyframes text{
+    0%{
+      opacity: 0;
+    }
+    100%{
+         opacity: 1;
+    }
+}
+
+@keyframes mars {
+    0%{
+      opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+
+@keyframes mars_center {
+    0%{
+        mix-blend-mode: revert;
+        color: #000;
+      
+    }
+    100%{
+       
+    }
+}
+@keyframes video {
+    0%{
+       opacity: 0;
+      
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+@keyframes tuman {
+    0%{
+       left: 1920px;
+      
+    }
+    100%{
+        left: -4000px;
+    }
+}
+
+
+

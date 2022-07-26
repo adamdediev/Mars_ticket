@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="asset/animation.css">
+    <link rel="stylesheet" href="asset/adaptiv.css">
+    <title>Mars</title>
+</head>
+<body>
+    <div class="open_window">
+        <div class="cont_open">
+        <div class="text_close">
+            <div class="text_bron">Бронирование
+                билетов</div>
+            <div onclick="close_menu()" class="close"><img src="asset/img/close.png" alt=""></div></div>
+            <div class="cont_input">
+            <div class="input"><label>Дата заезда</label><input placeholder="13.05.2022" type="text"></div>
+            <div class="input otstup"><label>Дата выезда</label><input placeholder="13.05.2032" type="text"></div>
+            <div class="input"><label>Количество</label><input placeholder="1 человек" type="text"></div>
+         </div>
+
+         <div class="btn_close"><button class="open_btn">Купить билеты</button></div>
+        
+    </div>
+    </div>
+    <div class="mars bak">МАРС
+        <div class="line_mars"></div>
+        <div class="text_line">Точка назначения:</div>
+        <div class="tuman">
+            <div class="bak_tuman_1"></div>
+            <div class="bak_tuman_2"></div>
+        </div>
+
+    </div> 
+           <div class="video"> <video src="asset/img/Mars.m4v" autoplay muted></video>  </div>
+            
+        
+         <header class="header">
+            <div class="header_logo"><img src="./asset/img/logo.svg" alt=""></div>
+            <nav>
+                <ul class="navigation">
+                    <li>О марсе</li>
+                    <li>Процесс</li>
+                    <li>Билеты</li>
+                    <li>Новости</li>
+                    <li>Контакты</li>
+                </ul>
+             <div onclick="open_menu()"> <button class="btn">Купить билеты</button></div>   
+            </nav>
+        </header>
+    <script src="asset/index.js"></script>
+</body>
+</html>
